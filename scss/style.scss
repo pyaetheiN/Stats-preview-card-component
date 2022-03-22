@@ -28,6 +28,7 @@ main{
     &__img{
         max-width: 350px;
         mix-blend-mode: multiply;
+        display: block; // takes all possible space
     }
     &__overlay{
         background-color: $accent;
@@ -68,7 +69,7 @@ main{
 // ===== media queries ===== \\
 
 // tablets
-@media screen and (min-width: 768px){
+@media screen and (min-width: 668px){
     .card{
 
         &__img,
@@ -82,12 +83,16 @@ main{
 }
 
 // laptops + desktops
-@media screen and (min-width: 968px){
+@media screen and (min-width: 1080px){
     .card{
         flex-direction: row-reverse;
         align-items: center;
-        column-gap: 1rem;
+        column-gap: 0.5rem;
 
+        &__img,
+        &__info{
+            max-width: 500px;
+        }
         &__info{
             text-align: initial;
             padding: 0 4em;
@@ -95,12 +100,11 @@ main{
         }
         &__title{
             margin-bottom: 0.8em;
-            font-size: 2.2em;
+            font-size: 2.3em;
             line-height: 1.2;
-            letter-spacing: 1px;
         }
         &__desc{
-            font-size: 0.8125em;
+            font-size: 0.85em;
             width: 90%;
             line-height: 1.7;
         }
@@ -111,7 +115,7 @@ main{
         }
         &__stat-title{
             font-size: 0.6875em;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
         &__stat-num{
             font-size: 1.5em;
