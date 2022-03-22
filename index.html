@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Pyae Thein (Ricky) | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card flex">
+      <!-- ===== card image ===== -->
+      <div class="card__overlay">
+        <picture>
+          <source media="(min-width: 968px)" srcset="./images/image-header-desktop.jpg" type="image/jpeg">
+          <source media="(max-width: 968px)" srcset="./images/image-header-mobile.jpg" type="image/jpeg">
+          <img src="images/image-header-mobile.jpg" alt="card image" class="card__img">
+        </picture>
+      </div>
+      <!-- ===== card info ===== -->
+      <div class="card__info">
+        <h1 class="card__title">
+          Get <span class="card__insight">insights</span> that help your business grow.
+        </h1>
+        <p class="card__desc">
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+          experience, and overall efficiency.
+        </p>
+        <div class="card__stats flex">
+          <!-- ===== first stat ===== -->
+          <div class="stat">
+            <h2 class="card__stat-num">10k+</h2>
+            <p class="card__stat-title">companies</p>
+          </div>
+          <!-- ===== second stat ===== -->
+          <div class="stat">
+            <h2 class="card__stat-num">314</h2>
+            <p class="card__stat-title">templates</p>
+          </div>
+          <!-- ===== third stat ===== -->
+          <div class="stat">
+            <h2 class="card__stat-num">12M+</h2>
+            <p class="card__stat-title">queries</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="attribution">
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/pyaetheiN" target="_blank">Pyae Thein (Ricky)</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
