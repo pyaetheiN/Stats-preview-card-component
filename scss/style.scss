@@ -75,6 +75,9 @@ main{
         &__info{
             max-width: 500px;
         }
+        &__title{
+            font-size: 2em;
+        }
     }
 }
 
@@ -92,7 +95,7 @@ main{
         }
         &__title{
             margin-bottom: 0.8em;
-            font-size: 2em;
+            font-size: 2.2em;
             line-height: 1.2;
             letter-spacing: 1px;
         }
@@ -109,6 +112,9 @@ main{
         &__stat-title{
             font-size: 0.6875em;
             letter-spacing: 2px;
+        }
+        &__stat-num{
+            font-size: 1.5em;
         }
     }
 }
